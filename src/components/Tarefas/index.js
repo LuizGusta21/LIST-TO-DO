@@ -10,7 +10,7 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
       {tarefas.map((tarefa, index) => (
         <li key={tarefa}>
           {tarefa}
-          <span>
+          <span className="neon">
             <FaEdit onClick={(e) => handleEdit(e, index)} className="edit" />
             <FaWindowClose onClick={(e) => handleDelete(e, index)} className="delete" />
           </span>

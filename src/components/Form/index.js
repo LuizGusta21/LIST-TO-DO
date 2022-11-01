@@ -6,8 +6,8 @@ import './Form.css';
 export default function Form({ handleChange, handleSubmit, novaTarefa }) {
   return (
     <form onSubmit={handleSubmit} action="#" className="form">
-      <input onChange={handleChange} type="text" value={novaTarefa} />
-      <button type="submit">
+      <input className="caixa" onChange={handleChange} type="text" value={novaTarefa} />
+      <button className="botao" type="submit">
         <FaPlus />
       </button>
     </form>

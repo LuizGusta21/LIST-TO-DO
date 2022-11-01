@@ -7,7 +7,7 @@
 
 .form input[type="text"] {
   height: 40px;
-  padding: 0 20px;
+  padding: 20px 20px;
   font-size: 15px;
   border: 1px solid #ccc;
   min-width: 80%;
@@ -22,4 +22,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.caixa:focus {
+  color: #111;
+  text-shadow: 0 0 8px rgba(255,255 ,255 ,0.3), 0 0 29px #ccc;
+  box-shadow: inset 0 2px 5px #ccc, 0 2px 5px #ccc;
+}
+
+.form .botao:hover {
+  height: 45px ;
+  width: 45px ;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255,255 ,255 ,1.5), 0 0 50px #fff;
+  box-shadow: inset 0 0 15px #f04c64, 0 0 15px #f04c64;
 }

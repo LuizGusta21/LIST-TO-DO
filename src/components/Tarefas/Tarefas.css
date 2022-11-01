@@ -8,10 +8,11 @@
   justify-content: space-between;
   padding: 10px;
   transition: all 500ms;
+  font-size: 25px;
 }
 
 .tarefas li:hover {
-  background: #51c5de;
+  background: #555;
 }
 
 .tarefas li .edit {
@@ -19,9 +20,21 @@
   color: #51c5de;
 }
 
+.tarefas li .neon .edit:hover {
+  color: #51c5de;
+  text-shadow: 0 0 8px rgba(255,255 ,255 ,0.3), 0 0 100px #51c5de;
+  box-shadow: inset 0 0 2px rgba(255,255,255,0.3), 0 0 10px #51c5de;
+}
+
 .tarefas li .delete {
   margin-right: 15px;
   color: #f04c64;
+}
+
+.tarefas li .neon .delete:hover {
+  color: #f04c64;
+  text-shadow: 0 0 8px rgba(255,255 ,255 ,0.3), 0 0 100px #f04c64;
+  box-shadow: inset 0 0 2px rgba(255,255,255,0.3), 0 0 10px #f04c64;
 }
 
 .tarefas li:hover .edit,
@@ -39,3 +52,4 @@
   display: flex;
   align-items: center;
 }
+
